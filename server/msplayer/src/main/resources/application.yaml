@@ -1,5 +1,6 @@
 server:
     port: 9192
+    
     servlet:
       context-path: /
 
@@ -18,4 +19,7 @@ spring:
         properties:
             hibernate: 
                 dialect: org.hibernate.dialect.MySQLDialect
-    
+    # Cau hinh CORS
+#    web:
+#      cors:
+#          allowed-origins: http://localhost:3000
