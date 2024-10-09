@@ -1,7 +1,7 @@
 This repository is to develop a MP3 Music Player application based on technologies such as React, Redux, Spring Boot,....
 
 
-Technologies:
+<h1>TECHNOLOGIES</h1>
 - Backend: Spring Boot, Lombok, Spring Security, ...
 
 - Frontend: ReactJS, Tailwind CSS, ...
@@ -11,8 +11,8 @@ Technologies:
 - Others: Bootstrap, ...
 
 
-Use:
-- Server Side:<br>
+<h1>USE</h1>
+Server Side:<br>
 Step 1: Open Command Line and use <b>'cd'</b> command to move to directory <b>'msplayer'</b> folder
 <br>
 Step 2: Type this command to run server
