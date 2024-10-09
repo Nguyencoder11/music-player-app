@@ -15,9 +15,7 @@ Use:
 - Server Side:
 Step 1: Open Command Line and change directory to the <b>'msplayer'</b> folder
 Step 2: Type this command to run server
-<code>
-mvn spring-boot:run
-</code>
+<code>mvn spring-boot:run</code>
 Step 3: Click on 'Enter', now it runs at <b>'http://localhost:9192'</b>
 
 - Client Side:
