@@ -12,7 +12,7 @@ Technologies:
 
 
 Use:
-- Server Side:
+- Server Side:<br>
 Step 1: Open Command Line and use <b>'cd'</b> command to move to directory <b>'msplayer'</b> folder
 <br>
 Step 2: Type this command to run server
