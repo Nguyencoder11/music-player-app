@@ -1,4 +1,4 @@
-This repository is to develop a MP3 Music Player application based on technologies such as React, Redux, Spring Boot,....
+<h1>This repository is to develop a MP3 Music Player application based on technologies such as React, Spring Boot,....</h1>
 
 
 <h1>TECHNOLOGIES</h1>
@@ -22,3 +22,4 @@ Step 3: Click on 'Enter', now it runs at <b>'http://localhost:9192'</b>
 
 - Client Side:
 Step 1: Open Command Line and use <b>'cd'</b> command to move to directory <b>`client`</b>
+
