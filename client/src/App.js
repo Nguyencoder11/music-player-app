@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import AppRoutes from './routes/Routes';
 
 function App() {
   return (
-    <div>Hello World</div>
+    <div className='App'>
+      <AppRoutes />
+    </div>
   );
 }
 
