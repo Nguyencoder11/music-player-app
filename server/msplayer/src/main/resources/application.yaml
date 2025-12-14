@@ -11,7 +11,7 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/msplayer
         username: root
-        password: Nguyenleviz@311
+        password:
     jpa:
         hibernate:
             ddl-auto: update
@@ -23,3 +23,7 @@ spring:
 #    web:
 #      cors:
 #          allowed-origins: http://localhost:3000
+
+jwt:
+    secret_key: "gmssolution"
+    expiration: 86400000

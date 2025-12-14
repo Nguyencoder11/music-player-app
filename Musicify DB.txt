@@ -1,0 +1,90 @@
+Table artists {
+  artist_id uuid [primary key, not null]
+  name varchar(20) [not null]
+  bio text
+  avatar_url byte
+  cover_image_url byte
+  country varchar(50)
+  follower_count bigint [default: 0]
+  like_count bigint [default: 0]
+  created_at timestamp
+  created_by varchar(20)
+  updated_at timestamp
+  updated_by varchar(20)
+  status enum(active, archived) [default: 'active']
+}
+
+Table songs {
+  song_id uuid [primary key, not null]
+  title varchar(50) [not null]
+  description text
+  duration integer [not null]
+  release_date date
+  lyrics text
+  stream_url byte [not null]  // duong dan file nhac, luong stream
+  cover_image_url byte  // duong dan anh bia
+  is_explicit bool [default: false] // kiem tra noi dung nhay cam
+  is_premium bool [default: false]  // chi danh cho premium
+  listening_count bigint [default: 0]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+  created_by varchar(20)
+  updated_by varchar(20)
+  song_status enum(published, draft, archived) [default: 'published']
+}
+
+Table genres {
+  genre_id uuid [primary key, not null]
+  name varchar(20)
+  description text
+}
+
+Table albums {
+  album_id uuid [primary key, not null]
+  title varchar(100) [not null]
+  description text
+  released_date date
+  cover_image_url byte
+  total_tracks integer [default: 0]
+  total_duration integer [default: 0]
+  created_at timestamp
+  updated_at timestamp
+  created_by varchar(20)
+  updated_by varchar(20)
+  status enum(published, draft, archived) [default: 'published']
+}
+
+Table users {
+  user_id uuid [primary key, not null]
+  username varchar(50) [unique, not null]
+  email varchar(255) [unique, not null]
+  password_hash varchar(255) [not null]
+  full_name varchar(100)
+  avatar_url byte
+  birth_date date
+  gender enum(male, female, other)
+  country varchar(50)
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+  is_premium bool [default: false]  // co phai tai khoan premium k?
+  premium_expiry timestamp  // han premiun
+  active_status enum(active, suspended, banned) [default: 'active']
+}
+
+Table playlists {
+  playlist_id uuid [not null, primary key]
+  title varchar(50) [not null]
+  description text
+  cover_image_url byte
+  is_public bool [default: true]
+  is_collaborative bool [default: false]
+  total_tracks integer [default: 0]
+  total_duration integer [default: 0]
+  follower_count bigint [default: 0]
+  like_count bigint [default: 0]
+  created_at timestamp
+  updated_at timestamp
+  created_by varchar(20)
+  updated_by varchar(20)
+}
+
